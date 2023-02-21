@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "near-by-mosques",
+    "slug": "near-by-mosques",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon-masjed.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-masjed.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location in order to provide location-based services."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon-masjed.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.alhajjomahmoud.nearbymosques"
+    },
+    "web": {
+      "favicon": "./assets/icon-masjed.png"
+    },
+    "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": ""
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0116fe03-e5dc-4ceb-958b-764eae7ba816"
+      }
+    }
+  }
+}
