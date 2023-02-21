@@ -1,6 +1,4 @@
-import { API_URL } from "@env";
-
-const serverUrl = API_URL
+const serverUrl = 'http://masjidnear.me'
 
 const appConstants = {
   serverUrl,
